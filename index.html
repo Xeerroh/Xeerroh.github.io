@@ -16,7 +16,26 @@
       <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
       <div class="title">Interactable CV</div>
     </div>
-    <script>
+   
+       <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    backgroundColor: "#273442",
+    splashStyle: "Light",
+    dataUrl: "Release/WebGLBuild06.data",
+    codeUrl: "Release/WebGLBuild06.js",
+    asmUrl: "Release/WebGLBuild06.asm.js",
+    memUrl: "Release/WebGLBuild06.mem",
+  };
+</script>
+     
+<script src="Release/UnityLoader.js"></script>
+
+  </body>
+</html>
+ <script>
 
   var appName = "<b>" + Module.codeUrl.replace("Release/", "").replace(".js","") + "</b> ";
   var canvas = document.getElementsByTagName("canvas")[0];
@@ -67,21 +86,3 @@
     }
   },100)
 </script>
-       <script type='text/javascript'>
-  var Module = {
-    TOTAL_MEMORY: 268435456,
-    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-    compatibilitycheck: null,
-    backgroundColor: "#273442",
-    splashStyle: "Light",
-    dataUrl: "Release/WebGLBuild06.data",
-    codeUrl: "Release/WebGLBuild06.js",
-    asmUrl: "Release/WebGLBuild06.asm.js",
-    memUrl: "Release/WebGLBuild06.mem",
-  };
-</script>
-     
-<script src="Release/UnityLoader.js"></script>
-
-  </body>
-</html>
